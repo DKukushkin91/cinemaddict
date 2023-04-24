@@ -1,4 +1,4 @@
 
-export const createFilmsContainer = () => {
-  return `<section class="films"></section>`
+export const getFilmsContainer = () => {
+  return `<section class="films"></section>`;
 };

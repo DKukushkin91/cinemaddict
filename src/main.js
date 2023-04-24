@@ -1,14 +1,13 @@
-import {createHeaderProfile} from './view/header/profile';
-import {createMenu} from './view/menu';
-import {createSiteSort} from './view/sort';
-import {createFilmsContainer} from './view/films/container';
-import {createFilmsList} from './view/films/list';
-import {createFilmsTopRated} from './view/films/list-top-rated';
-import {createFilmsMostCommented} from "./view/films/list-most-commented";
+import {getHeaderProfile} from './view/header/profile';
+import {getMenu} from './view/menu';
+import {getSiteSort} from './view/sort';
+import {getFilmsContainer} from './view/films/container';
+import {getFilmsList} from './view/films/list';
+import {getFilmsTopRated} from './view/films/list-top-rated';
+import {getFilmsMostCommented} from "./view/films/list-most-commented";
 import {movieList} from './view/films/movie-list';
-import {createFilmsCard} from './view/films/card';
-import {createFooterStatistics} from './view/footer/footer-statisticks';
-
+import {getFilmsCard} from './view/films/card';
+import {getFooterStatistics} from './view/footer/footer-statisticks';
 
 const render = (container, template, place = 'beforeend') => {
   container.insertAdjacentHTML(place, template);
@@ -16,52 +15,52 @@ const render = (container, template, place = 'beforeend') => {
 
 // HEADER
 const siteHeaderElement = document.querySelector('.header');
-render(siteHeaderElement, createHeaderProfile());
+render(siteHeaderElement, getHeaderProfile());
 
 // MAIN
 // Site Menu
 const siteMainElement = document.querySelector('.main');
-render(siteMainElement, createMenu());
+render(siteMainElement, getMenu());
 
 // Site Sort
-render(siteMainElement, createSiteSort());
+render(siteMainElement, getSiteSort());
 
 // Films Container
-render(siteMainElement, createFilmsContainer());
+render(siteMainElement, getFilmsContainer());
 
 // Films List Container
 const siteFilmsContainer = siteMainElement.querySelector('.films');
-render(siteFilmsContainer, createFilmsList());
+render(siteFilmsContainer, getFilmsList());
 
 // Films List Cards
 const siteFilmsListCards = siteFilmsContainer.querySelector('.films-list__container');
-for (let $index = 0; $index < 5; $index++) {
-  render(siteFilmsListCards, createFilmsCard(movieList.list[$index]));
+for (let index = 0; index < 5; index++) {
+  render(siteFilmsListCards, getFilmsCard(movieList.list[index]));
 }
 
 // Films List Top Rated
-render(siteFilmsContainer, createFilmsTopRated());
+render(siteFilmsContainer, getFilmsTopRated());
 
 // Films List Cards Top Rated
 const siteFilmsListCardsTopRated = siteFilmsContainer.querySelector('.js-films-list-top-rated');
 
 const siteFilmsListCardsTopRatedCards = siteFilmsListCardsTopRated.querySelector('.films-list__container');
-for (let $index = 0; $index < 2; $index++) {
-  render(siteFilmsListCardsTopRatedCards, createFilmsCard(movieList.topRated[$index]));
+for (let index = 0; index < 2; index++) {
+  render(siteFilmsListCardsTopRatedCards, getFilmsCard(movieList.topRated[index]));
 }
 
 // Films List Most Commented
-render(siteFilmsContainer, createFilmsMostCommented());
+render(siteFilmsContainer, getFilmsMostCommented());
 
 // Films List Cards Top Rated
 const siteFilmsListCardsMostCommented = siteFilmsContainer.querySelector('.js-films-list-most-commented');
 
 const siteFilmsListCardsMostCommentedCards = siteFilmsListCardsMostCommented.querySelector('.films-list__container');
-for (let $index = 0; $index < 2; $index++) {
-  render(siteFilmsListCardsMostCommentedCards, createFilmsCard(movieList.mostCommented[$index]));
+for (let index = 0; index < 2; index++) {
+  render(siteFilmsListCardsMostCommentedCards, getFilmsCard(movieList.mostCommented[index]));
 }
 
 // FOOTER
 const siteFooterElement = document.querySelector('.footer');
 const siteFooterStatistics = siteFooterElement.querySelector('.footer__statistics');
-render(siteFooterStatistics, createFooterStatistics());
+render(siteFooterStatistics, getFooterStatistics());

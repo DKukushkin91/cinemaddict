@@ -1,5 +1,5 @@
 
-export const createFilmsCard = (item) => {
+export const getFilmsCard = (item) => {
   return `<article class="film-card">
           <a class="film-card__link">
             <h3 class="film-card__title">${item.title}</h3>
@@ -18,5 +18,5 @@ export const createFilmsCard = (item) => {
             <button class="film-card__controls-item film-card__controls-item--mark-as-watched" type="button">Mark as watched</button>
             <button class="film-card__controls-item film-card__controls-item--favorite" type="button">Mark as favorite</button>
           </div>
-        </article>`
+        </article>`;
 };
