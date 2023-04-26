@@ -3,23 +3,38 @@ import {getMenu} from './view/menu';
 import {getSiteSort} from './view/sort';
 import {getFilmsContainer} from './view/films/container';
 import {getFilmsList} from './view/films/list';
+import {getFilmsListEmpty} from './view/films/list-empty';
 import {getFilmsTopRated} from './view/films/list-top-rated';
 import {getFilmsMostCommented} from "./view/films/list-most-commented";
 import {movieList} from './view/films/movie-list';
 import {getFilmsCard} from './view/films/card';
 import {getFooterStatistics} from './view/footer/footer-statisticks';
+import {render} from './presenter/render';
 
-const render = (container, template, place = 'beforeend') => {
-  container.insertAdjacentHTML(place, template);
-};
+async function fetchTest() {
+  const response = await fetch('https://13.ecmascript.pages.academy/cinemaddict/movies', {
+    headers: {
+      'Authorization': `Basic KAHUKYJlbl`,
+      'Content-Type': 'application/json'
+    }
+  }).then((response) => {
+    return response.json();
+  }).then((result) => {
+    console.log(result);
+  });
+}
+
+fetchTest();
 
 // HEADER
-const siteHeaderElement = document.querySelector('.header');
-render(siteHeaderElement, getHeaderProfile());
+const siteHeaderElement = document.querySelector(`.header`);
+const rank = 22;
+
+render(siteHeaderElement, getHeaderProfile(rank));
 
 // MAIN
 // Site Menu
-const siteMainElement = document.querySelector('.main');
+const siteMainElement = document.querySelector(`.main`);
 render(siteMainElement, getMenu());
 
 // Site Sort
@@ -29,22 +44,27 @@ render(siteMainElement, getSiteSort());
 render(siteMainElement, getFilmsContainer());
 
 // Films List Container
-const siteFilmsContainer = siteMainElement.querySelector('.films');
+const siteFilmsContainer = siteMainElement.querySelector(`.films`);
 render(siteFilmsContainer, getFilmsList());
 
 // Films List Cards
-const siteFilmsListCards = siteFilmsContainer.querySelector('.films-list__container');
-for (let index = 0; index < 5; index++) {
-  render(siteFilmsListCards, getFilmsCard(movieList.list[index]));
+const siteFilmsListCards = siteFilmsContainer.querySelector(`.films-list__container`);
+
+if (movieList.list.length) {
+  for (let index = 0; index < 5; index++) {
+    render(siteFilmsListCards, getFilmsCard(movieList.list[index]));
+  }
+} else {
+  render(siteFilmsListCards, getFilmsListEmpty());
 }
 
 // Films List Top Rated
 render(siteFilmsContainer, getFilmsTopRated());
 
 // Films List Cards Top Rated
-const siteFilmsListCardsTopRated = siteFilmsContainer.querySelector('.js-films-list-top-rated');
+const siteFilmsListCardsTopRated = siteFilmsContainer.querySelector(`.js-films-list-top-rated`);
 
-const siteFilmsListCardsTopRatedCards = siteFilmsListCardsTopRated.querySelector('.films-list__container');
+const siteFilmsListCardsTopRatedCards = siteFilmsListCardsTopRated.querySelector(`.films-list__container`);
 for (let index = 0; index < 2; index++) {
   render(siteFilmsListCardsTopRatedCards, getFilmsCard(movieList.topRated[index]));
 }
@@ -53,14 +73,16 @@ for (let index = 0; index < 2; index++) {
 render(siteFilmsContainer, getFilmsMostCommented());
 
 // Films List Cards Top Rated
-const siteFilmsListCardsMostCommented = siteFilmsContainer.querySelector('.js-films-list-most-commented');
+const siteFilmsListCardsMostCommented = siteFilmsContainer.querySelector(`.js-films-list-most-commented`);
 
-const siteFilmsListCardsMostCommentedCards = siteFilmsListCardsMostCommented.querySelector('.films-list__container');
+const siteFilmsListCardsMostCommentedCards = siteFilmsListCardsMostCommented.querySelector(`.films-list__container`);
 for (let index = 0; index < 2; index++) {
   render(siteFilmsListCardsMostCommentedCards, getFilmsCard(movieList.mostCommented[index]));
 }
 
 // FOOTER
-const siteFooterElement = document.querySelector('.footer');
-const siteFooterStatistics = siteFooterElement.querySelector('.footer__statistics');
-render(siteFooterStatistics, getFooterStatistics());
+const siteFooterElement = document.querySelector(`.footer`);
+const siteFooterStatistics = siteFooterElement.querySelector(`.footer__statistics`);
+const statisticsCount = 124545;
+
+render(siteFooterStatistics, getFooterStatistics(statisticsCount));
