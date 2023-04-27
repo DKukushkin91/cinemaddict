@@ -1,3 +1,4 @@
+import {storage} from "./storage";
 import {getHeaderProfile} from './view/header/profile';
 import {getMenu} from './view/menu';
 import {getSiteSort} from './view/sort';
@@ -11,20 +12,23 @@ import {getFilmsCard} from './view/films/card';
 import {getFooterStatistics} from './view/footer/footer-statisticks';
 import {render} from './presenter/render';
 
-async function fetchTest() {
-  const response = await fetch('https://13.ecmascript.pages.academy/cinemaddict/movies', {
-    headers: {
-      'Authorization': `Basic KAHUKYJlbl`,
-      'Content-Type': 'application/json'
-    }
-  }).then((response) => {
-    return response.json();
-  }).then((result) => {
-    console.log(result);
-  });
-}
+// async function fetchTest() {
+//   const response = await fetch('https://13.ecmascript.pages.academy/cinemaddict/movies', {
+//     headers: {
+//       'Authorization': `Basic KAHUKYJlbl`,
+//       'Content-Type': 'application/json'
+//     }
+//   }).then((response) => {
+//     return response.json();
+//   }).then((result) => {
+//     console.log(result);
+//   });
+// }
+//
+// fetchTest();
 
-fetchTest();
+// eslint-disable-next-line no-console
+console.log(storage);
 
 // HEADER
 const siteHeaderElement = document.querySelector(`.header`);
