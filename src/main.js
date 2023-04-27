@@ -3,9 +3,9 @@ import {getMenu} from './view/menu';
 import {getSiteSort} from './view/sort';
 import {getFilmsContainer} from './view/films/container';
 import {getFilmsList} from './view/films/list';
-import {getFilmsListEmpty} from './view/films/list-empty';
-import {getFilmsTopRated} from './view/films/list-top-rated';
-import {getFilmsMostCommented} from "./view/films/list-most-commented";
+import {getFilmsEmpty} from './view/films/empty';
+import {getFilmsTopRated} from './view/films/top-rated';
+import {getFilmsMostCommented} from "./view/films/most-commented";
 import {movieList} from './view/films/movie-list';
 import {getFilmsCard} from './view/films/card';
 import {getFooterStatistics} from './view/footer/footer-statisticks';
@@ -55,7 +55,7 @@ if (movieList.list.length) {
     render(siteFilmsListCards, getFilmsCard(movieList.list[index]));
   }
 } else {
-  render(siteFilmsListCards, getFilmsListEmpty());
+  render(siteFilmsListCards, getFilmsEmpty());
 }
 
 // Films List Top Rated
