@@ -1,34 +1,19 @@
-import {storage} from "./storage";
+import {render} from './presenter/render';
+import {storageTest} from './storageTest';
+import {storage} from './storage';
+import {getFilmsCard} from './view/films/card';
+import {getFilmsContainer} from './view/films/container';
+import {getFilmsEmpty} from './view/films/empty';
+import {getFilmsList} from './view/films/list';
+import {getFilmsMostCommented} from './view/films/most-commented';
+import {getFilmsTopRated} from './view/films/top-rated';
+import {getFooterStatistics} from './view/footer/footer-statisticks';
 import {getHeaderProfile} from './view/header/profile';
 import {getMenu} from './view/menu';
 import {getSiteSort} from './view/sort';
-import {getFilmsContainer} from './view/films/container';
-import {getFilmsList} from './view/films/list';
-import {getFilmsEmpty} from './view/films/empty';
-import {getFilmsTopRated} from './view/films/top-rated';
-import {getFilmsMostCommented} from "./view/films/most-commented";
-import {movieList} from './view/films/movie-list';
-import {getFilmsCard} from './view/films/card';
-import {getFooterStatistics} from './view/footer/footer-statisticks';
-import {render} from './presenter/render';
 
-// async function fetchTest() {
-//   const response = await fetch('https://13.ecmascript.pages.academy/cinemaddict/movies', {
-//     headers: {
-//       'Authorization': `Basic KAHUKYJlbl`,
-//       'Content-Type': 'application/json'
-//     }
-//   }).then((response) => {
-//     return response.json();
-//   }).then((result) => {
-//     console.log(result);
-//   });
-// }
-//
-// fetchTest();
-
-// eslint-disable-next-line no-console
-console.log(storage);
+// storageTest() временно тут, потом удалится
+storageTest().then();
 
 // HEADER
 const siteHeaderElement = document.querySelector(`.header`);
@@ -54,9 +39,9 @@ render(siteFilmsContainer, getFilmsList());
 // Films List Cards
 const siteFilmsListCards = siteFilmsContainer.querySelector(`.films-list__container`);
 
-if (movieList.list.length) {
+if (storage.movies.length) {
   for (let index = 0; index < 5; index++) {
-    render(siteFilmsListCards, getFilmsCard(movieList.list[index]));
+    render(siteFilmsListCards, getFilmsCard(storage.movies[index]));
   }
 } else {
   render(siteFilmsListCards, getFilmsEmpty());
@@ -70,7 +55,7 @@ const siteFilmsListCardsTopRated = siteFilmsContainer.querySelector(`.js-films-l
 
 const siteFilmsListCardsTopRatedCards = siteFilmsListCardsTopRated.querySelector(`.films-list__container`);
 for (let index = 0; index < 2; index++) {
-  render(siteFilmsListCardsTopRatedCards, getFilmsCard(movieList.topRated[index]));
+  render(siteFilmsListCardsTopRatedCards, getFilmsCard(storage.topRated[index]));
 }
 
 // Films List Most Commented
@@ -81,7 +66,7 @@ const siteFilmsListCardsMostCommented = siteFilmsContainer.querySelector(`.js-fi
 
 const siteFilmsListCardsMostCommentedCards = siteFilmsListCardsMostCommented.querySelector(`.films-list__container`);
 for (let index = 0; index < 2; index++) {
-  render(siteFilmsListCardsMostCommentedCards, getFilmsCard(movieList.mostCommented[index]));
+  render(siteFilmsListCardsMostCommentedCards, getFilmsCard(storage.mostCommented[index]));
 }
 
 // FOOTER
