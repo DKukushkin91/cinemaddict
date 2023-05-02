@@ -7,18 +7,18 @@ export const storage = {
       "film_info": {
         "actors": [`Cillian Murphy`, `Leonardo DiCaprio`, `Brad Pitt`, `Morgan Freeman `, `Christian Bale`, `Takeshi Kitano`, `Matt Damon`, `Ralph Fiennes`],
         "age_rating": 21,
-        "alternative_title": `A Little Pony Who Themselves`,
-        "description": `Oscar-winning film, a war drama about two young people, true masterpiece where love and death are closer to heroes than their family, with the best fight scenes since Bruce Lee.`,
+        "alternative_title": `28 week later`,
+        "description": `Спустя 5 недель после начала эпидемии все заражённые погибли от голода, 11 недель спустя американские войска в составе НАТО вступили в Лондон, 24 недели спустя начались работы по восстановлению страны. Основные события фильма происходит через 28 недель после начала эпидемии.`,
         "director": `Alejandro Gonsales Inarritu`,
         "genre": [`Adventure`],
-        "poster": `images/posters/the-dance-of-life.jpg`,
+        "poster": `images/posters/28_nedel_spustya.png`,
         "release": {
-          "date": `2014-06-02T21:50:16.133Z`,
+          "date": `2007-05-31T21:50:16.133Z`,
           "release_country": `Japan`
         },
-        "runtime": 204,
-        "title": `A Lion Who Stole The Floor`,
-        "total_rating": 6.9,
+        "runtime": 100,
+        "title": `28 недель спустя`,
+        "total_rating": 9.9,
         "writers": [`Robert Rodrigues`, `Martin Scorsese`, `Brad Bird`, `Takeshi Kitano`, `Quentin Tarantino`, `Stephen King`]
       },
       "id": 0,
@@ -34,24 +34,24 @@ export const storage = {
       "film_info": {
         "actors": [`Ralph Fiennes`],
         "age_rating": 6,
-        "alternative_title": `A Man Who Stole Himself`,
-        "description": `Oscar-winning film.`,
+        "alternative_title": `Monster Hunter`,
+        "description": `Вступив в войну с гигантскими и невероятно сильными врагами, Артемис решает объединиться с таинственным человеком – Охотником (Тони Джа), который нашёл способ дать отпор монстрам.`,
         "director": `Tom Ford`,
         "genre": [`Comedy`, `Animation`, `Thriller`, `Action`],
-        "poster": `images/posters/sagebrush-trail.jpg`,
+        "poster": `images/posters/ohotnik_na_monstrov.webp`,
         "release": {
-          "date": `2004-08-07T14:44:52.478Z`,
+          "date": `2021-01-14T14:44:52.478Z`,
           "release_country": `Finland`
         },
-        "runtime": 162,
-        "title": `A Man On The Darkness`,
-        "total_rating": 5.9,
+        "runtime": 104,
+        "title": `Охотник на монстров`,
+        "total_rating": 9.5,
         "writers": [`Quentin Tarantino`, `Stephen Spielberg`, `Martin Scorsese`, `Takeshi Kitano`]
       },
       "id": 1,
       "user_details": {
         "already_watched": true,
-        "favorite": false,
+        "favorite": true,
         "watching_date": `2022-08-22T04:56:43.541Z`,
         "watchlist": false
       }
@@ -303,46 +303,114 @@ export const storage = {
   ],
   topRated: [
     {
-      title: `The Man with the Golden Arm`,
-      rating: 9.0,
-      year: 1955,
-      duration: `1h 59m`,
-      genre: `Drama`,
-      poster: `./images/posters/the-man-with-the-golden-arm.jpg`,
-      description: `Frankie Machine (Frank Sinatra) is released from the federal Narcotic Farm in Lexington, Kentucky with a set of drums and a new outlook on…`,
-      comments: `18 comments`
+      "comments": [`3635`, `3636`, `3637`, `3638`, `3639`, `3640`],
+      "film_info": {
+        "actors": [`Cillian Murphy`, `Leonardo DiCaprio`, `Brad Pitt`, `Morgan Freeman `, `Christian Bale`, `Takeshi Kitano`, `Matt Damon`, `Ralph Fiennes`],
+        "age_rating": 21,
+        "alternative_title": `A Little Pony Who Themselves`,
+        "description": `Oscar-winning film, a war drama about two young people, true masterpiece where love and death are closer to heroes than their family, with the best fight scenes since Bruce Lee.`,
+        "director": `Alejandro Gonsales Inarritu`,
+        "genre": [`Adventure`],
+        "poster": `images/posters/the-dance-of-life.jpg`,
+        "release": {
+          "date": `2014-06-02T21:50:16.133Z`,
+          "release_country": `Japan`
+        },
+        "runtime": 204,
+        "title": `A Lion Who Stole The Floor`,
+        "total_rating": 6.9,
+        "writers": [`Robert Rodrigues`, `Martin Scorsese`, `Brad Bird`, `Takeshi Kitano`, `Quentin Tarantino`, `Stephen King`]
+      },
+      "id": 0,
+      "user_details": {
+        "already_watched": true,
+        "favorite": false,
+        "watching_date": `2022-08-17T04:56:43.541Z`,
+        "watchlist": false
+      }
     },
     {
-      title: `The Great Flamarion`,
-      rating: 8.9,
-      year: 1945,
-      duration: `1h 18m`,
-      genre: `Mystery`,
-      poster: `./images/posters/the-great-flamarion.jpg`,
-      description: `The film opens following a murder at a cabaret in Mexico City in 1936, and then presents the events leading up to it in flashback. The Grea…`,
-      comments: `12 comments`
+      "comments": [`3641`, `3642`, `3643`],
+      "film_info": {
+        "actors": [`Ralph Fiennes`],
+        "age_rating": 6,
+        "alternative_title": `A Man Who Stole Himself`,
+        "description": `Oscar-winning film.`,
+        "director": `Tom Ford`,
+        "genre": [`Comedy`, `Animation`, `Thriller`, `Action`],
+        "poster": `images/posters/sagebrush-trail.jpg`,
+        "release": {
+          "date": `2004-08-07T14:44:52.478Z`,
+          "release_country": `Finland`
+        },
+        "runtime": 162,
+        "title": `A Man On The Darkness`,
+        "total_rating": 5.9,
+        "writers": [`Quentin Tarantino`, `Stephen Spielberg`, `Martin Scorsese`, `Takeshi Kitano`]
+      },
+      "id": 1,
+      "user_details": {
+        "already_watched": true,
+        "favorite": false,
+        "watching_date": `2022-08-22T04:56:43.541Z`,
+        "watchlist": false
+      }
     },
   ],
   mostCommented: [
     {
-      title: `Santa Claus Conquers the Martians`,
-      rating: 2.3,
-      year: 1964,
-      duration: `1h 21m`,
-      genre: `Comedy`,
-      poster: `./images/posters/santa-claus-conquers-the-martians.jpg`,
-      description: `The Martians Momar ("Mom Martian") and Kimar ("King Martian") are worried that their children Girmar ("Girl Martian") and Bomar ("Boy Marti…`,
-      comments: `465 comments`
+      "comments": [`3644`, `3645`, `3646`, `3647`],
+      "film_info": {
+        "actors": [`Michael Caine`, `Cillian Murphy`, `Tom Hanks`, `Edward Norton`, `Leonardo DiCaprio`],
+        "age_rating": 6,
+        "alternative_title": `A Tale Of A Little Bird In The Floor`,
+        "description": `from the creators of timeless classic "Nu, Pogodi!" and "Alice in Wonderland".`,
+        "director": `Alejandro Gonsales Inarritu`,
+        "genre": [`Horror`, `Sci-Fi`, `Family`, `Animation`, `Action`],
+        "poster": `images/posters/the-dance-of-life.jpg`,
+        "release": {
+          "date": `2004-09-01T21:13:36.601Z`,
+          "release_country": `Russia`
+        },
+        "runtime": 122,
+        "title": `Laziness Who Stole The Floor`,
+        "total_rating": 9.6,
+        "writers": [`Quentin Tarantino`, `Robert Rodrigues`, `Stephen Spielberg`, `Martin Scorsese`]
+      },
+      "id": 2,
+      "user_details": {
+        "already_watched": true,
+        "favorite": false,
+        "watching_date": `2022-10-12T04:56:43.541Z`,
+        "watchlist": false
+      }
     },
     {
-      title: `Made for Each Other`,
-      rating: 5.8,
-      year: 1939,
-      duration: `1h 32m`,
-      genre: `Comedy`,
-      poster: `./images/posters/made-for-each-other.png`,
-      description: `John Mason (James Stewart) is a young, somewhat timid attorney in New York City. He has been doing his job well, and he has a chance of bei…`,
-      comments: `56 comments`
+      "comments": [`3648`, `3649`, `3650`, `3651`, `3652`],
+      "film_info": {
+        "actors": [`Brad Pitt`, `Robert De Niro`],
+        "age_rating": 0,
+        "alternative_title": `A Man Who Saw The Wall`,
+        "description": `Oscar-winning film, a war drama about two young people, from the creators of timeless classic "Nu, Pogodi!" and "Alice in Wonderland", with the best fight scenes since Bruce Lee.`,
+        "director": `Tom Ford`,
+        "genre": [`Sci-Fi`, `Thriller`, `Action`, `Horror`],
+        "poster": `images/posters/santa-claus-conquers-the-martians.jpg`,
+        "release": {
+          "date": `2016-11-05T17:37:35.080Z`,
+          "release_country": `Italy`
+        },
+        "runtime": 84,
+        "title": `Friends On Themselves`,
+        "total_rating": 8,
+        "writers": [`Takeshi Kitano`, `Robert Zemeckis`]
+      },
+      "id": 3,
+      "user_details": {
+        "already_watched": true,
+        "favorite": false,
+        "watching_date": `2023-03-18T04:56:43.541Z`,
+        "watchlist": true
+      }
     },
   ]
 };

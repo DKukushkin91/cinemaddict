@@ -72,6 +72,5 @@ for (let index = 0; index < 2; index++) {
 // FOOTER
 const siteFooterElement = document.querySelector(`.footer`);
 const siteFooterStatistics = siteFooterElement.querySelector(`.footer__statistics`);
-const statisticsCount = 124545;
 
-render(siteFooterStatistics, getFooterStatistics(statisticsCount));
+render(siteFooterStatistics, getFooterStatistics(storage.movies.length));

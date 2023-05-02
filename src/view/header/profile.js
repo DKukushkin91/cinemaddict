@@ -17,8 +17,10 @@ export const getHeaderProfile = (rankIndex) => {
     rankName = Rank.MOVIE_BUF;
   }
 
-  return `<section class="header__profile profile">
-    ${rankIndex > 0 ? getRank(rankName) : ``}
-    <img class="profile__avatar" src="images/bitmap@2x.png" alt="Avatar" width="35" height="35">
-  </section>`;
+  return (
+    `<section class="header__profile profile">
+      ${rankIndex > 0 ? getRank(rankName) : ``}
+      <img class="profile__avatar" src="images/bitmap@2x.png" alt="Avatar" width="35" height="35">
+    </section>`
+  );
 };
