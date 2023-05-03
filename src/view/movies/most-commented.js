@@ -1,5 +1,5 @@
 
-export const getFilmsMostCommented = () => {
+export const getMoviesMostCommented = () => {
   return (
     `<section class="films-list films-list--extra js-films-list-most-commented">
       <h2 class="films-list__title">Most commented</h2>

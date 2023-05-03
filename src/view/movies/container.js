@@ -1,5 +1,5 @@
 
-export const getFilmsContainer = () => {
+export const getMoviesContainer = () => {
   return (
     `<section class="films"></section>`
   );

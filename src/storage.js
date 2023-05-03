@@ -1,9 +1,8 @@
 
 export const storage = {
-  // NEW
   movies: [
     {
-      "comments": [`3635`, `3636`, `3637`, `3638`, `3639`, `3640`],
+      "comments": [`4325`, `4326`, `4327`, `4328`, `4329`],
       "film_info": {
         "actors": [`Cillian Murphy`, `Leonardo DiCaprio`, `Brad Pitt`, `Morgan Freeman `, `Christian Bale`, `Takeshi Kitano`, `Matt Damon`, `Ralph Fiennes`],
         "age_rating": 21,
@@ -30,7 +29,7 @@ export const storage = {
       }
     },
     {
-      "comments": [`3641`, `3642`, `3643`],
+      "comments": [`4330`, `4331`, `4332`, `4333`, `4334`],
       "film_info": {
         "actors": [`Ralph Fiennes`],
         "age_rating": 6,
@@ -50,7 +49,7 @@ export const storage = {
       },
       "id": 1,
       "user_details": {
-        "already_watched": true,
+        "already_watched": false,
         "favorite": true,
         "watching_date": `2022-08-22T04:56:43.541Z`,
         "watchlist": false
@@ -62,7 +61,7 @@ export const storage = {
         "actors": [`Michael Caine`, `Cillian Murphy`, `Tom Hanks`, `Edward Norton`, `Leonardo DiCaprio`],
         "age_rating": 6,
         "alternative_title": `A Tale Of A Little Bird In The Floor`,
-        "description": `from the creators of timeless classic "Nu, Pogodi!" and "Alice in Wonderland".`,
+        "description": `From the creators of timeless classic "Nu, Pogodi!" and "Alice in Wonderland".`,
         "director": `Alejandro Gonsales Inarritu`,
         "genre": [`Horror`, `Sci-Fi`, `Family`, `Animation`, `Action`],
         "poster": `images/posters/the-dance-of-life.jpg`,
@@ -219,7 +218,7 @@ export const storage = {
       }
     },
     {
-      "comments": [`3672`, `3673`, `3674`, `3675`],
+      "comments": [],
       "film_info": {
         "actors": [`Christian Bale`, `Takeshi Kitano`, `Ralph Fiennes`],
         "age_rating": 18,
@@ -245,172 +244,290 @@ export const storage = {
         "watchlist": false
       }
     }
-
   ],
-
-  // OLD
-  list: [
-    {
-      title: `The Dance of Life`,
-      rating: 8.3,
-      year: 1929,
-      duration: `1h 55m`,
-      genre: `Musical`,
-      poster: `./images/posters/the-dance-of-life.jpg`,
-      description: `Burlesque comic Ralph "Skid" Johnson (Skelly), and specialty dancer Bonny Lee King (Carroll), end up together on a cold, rainy night at a tr…`,
-      comments: `5 comments`
-    },
-    {
-      title: `Sagebrush Trail`,
-      rating: 3.2,
-      year: 1933,
-      duration: `54m`,
-      genre: `Western`,
-      poster: `./images/posters/sagebrush-trail.jpg`,
-      description: `Sentenced for a murder he did not commit, John Brant escapes from prison determined to find the real killer. By chance Brant\`s narrow escap…`,
-      comments: `89 comments`
-    },
-    {
-      title: `The Man with the Golden Arm`,
-      rating: 9.0,
-      year: 1955,
-      duration: `1h 59m`,
-      genre: `Drama`,
-      poster: `./images/posters/the-man-with-the-golden-arm.jpg`,
-      description: `Frankie Machine (Frank Sinatra) is released from the federal Narcotic Farm in Lexington, Kentucky with a set of drums and a new outlook on…`,
-      comments: `18 comments`
-    },
-    {
-      title: `Santa Claus Conquers the Martians`,
-      rating: 2.3,
-      year: 1964,
-      duration: `1h 21m`,
-      genre: `Comedy`,
-      poster: `./images/posters/santa-claus-conquers-the-martians.jpg`,
-      description: `The Martians Momar ("Mom Martian") and Kimar ("King Martian") are worried that their children Girmar ("Girl Martian") and Bomar ("Boy Marti…`,
-      comments: `465 comments`
-    },
-    {
-      title: `Popeye the Sailor Meets Sindbad the Sailor`,
-      rating: 6.3,
-      year: 1936,
-      duration: `16m`,
-      genre: `Cartoon`,
-      poster: `./images/posters/popeye-meets-sinbad.png`,
-      description: `In this short, Sindbad the Sailor (presumably Bluto playing a "role") proclaims himself, in song, to be the greatest sailor, adventurer and…`,
-      comments: `0 comments`
-    },
-  ],
-  topRated: [
-    {
-      "comments": [`3635`, `3636`, `3637`, `3638`, `3639`, `3640`],
-      "film_info": {
-        "actors": [`Cillian Murphy`, `Leonardo DiCaprio`, `Brad Pitt`, `Morgan Freeman `, `Christian Bale`, `Takeshi Kitano`, `Matt Damon`, `Ralph Fiennes`],
-        "age_rating": 21,
-        "alternative_title": `A Little Pony Who Themselves`,
-        "description": `Oscar-winning film, a war drama about two young people, true masterpiece where love and death are closer to heroes than their family, with the best fight scenes since Bruce Lee.`,
-        "director": `Alejandro Gonsales Inarritu`,
-        "genre": [`Adventure`],
-        "poster": `images/posters/the-dance-of-life.jpg`,
-        "release": {
-          "date": `2014-06-02T21:50:16.133Z`,
-          "release_country": `Japan`
-        },
-        "runtime": 204,
-        "title": `A Lion Who Stole The Floor`,
-        "total_rating": 6.9,
-        "writers": [`Robert Rodrigues`, `Martin Scorsese`, `Brad Bird`, `Takeshi Kitano`, `Quentin Tarantino`, `Stephen King`]
+  comments: [
+    [
+      {
+        author: `Tim Ivanov [comments array 0]`,
+        comment: `.`,
+        date: `2023-04-23T07:53:21.172Z`,
+        emotion: `sleeping`,
+        id: `4325`
       },
-      "id": 0,
-      "user_details": {
-        "already_watched": true,
-        "favorite": false,
-        "watching_date": `2022-08-17T04:56:43.541Z`,
-        "watchlist": false
-      }
-    },
-    {
-      "comments": [`3641`, `3642`, `3643`],
-      "film_info": {
-        "actors": [`Ralph Fiennes`],
-        "age_rating": 6,
-        "alternative_title": `A Man Who Stole Himself`,
-        "description": `Oscar-winning film.`,
-        "director": `Tom Ford`,
-        "genre": [`Comedy`, `Animation`, `Thriller`, `Action`],
-        "poster": `images/posters/sagebrush-trail.jpg`,
-        "release": {
-          "date": `2004-08-07T14:44:52.478Z`,
-          "release_country": `Finland`
-        },
-        "runtime": 162,
-        "title": `A Man On The Darkness`,
-        "total_rating": 5.9,
-        "writers": [`Quentin Tarantino`, `Stephen Spielberg`, `Martin Scorsese`, `Takeshi Kitano`]
+      {
+        author: `Nevada Makoveev`,
+        comment: `a film that changed my life, such a boring piece of..., my friend and I went to watch this movie and never made it there so we didn't like it at all, I know what film is gonna win Oscar this year.`,
+        date: `2023-04-13T03:39:31.149Z`,
+        emotion: `angry`,
+        id: `4326`
       },
-      "id": 1,
-      "user_details": {
-        "already_watched": true,
-        "favorite": false,
-        "watching_date": `2022-08-22T04:56:43.541Z`,
-        "watchlist": false
-      }
-    },
-  ],
-  mostCommented: [
-    {
-      "comments": [`3644`, `3645`, `3646`, `3647`],
-      "film_info": {
-        "actors": [`Michael Caine`, `Cillian Murphy`, `Tom Hanks`, `Edward Norton`, `Leonardo DiCaprio`],
-        "age_rating": 6,
-        "alternative_title": `A Tale Of A Little Bird In The Floor`,
-        "description": `from the creators of timeless classic "Nu, Pogodi!" and "Alice in Wonderland".`,
-        "director": `Alejandro Gonsales Inarritu`,
-        "genre": [`Horror`, `Sci-Fi`, `Family`, `Animation`, `Action`],
-        "poster": `images/posters/the-dance-of-life.jpg`,
-        "release": {
-          "date": `2004-09-01T21:13:36.601Z`,
-          "release_country": `Russia`
-        },
-        "runtime": 122,
-        "title": `Laziness Who Stole The Floor`,
-        "total_rating": 9.6,
-        "writers": [`Quentin Tarantino`, `Robert Rodrigues`, `Stephen Spielberg`, `Martin Scorsese`]
+      {
+        author: `Marina Walker`,
+        comment: `such a boring piece of..., I fell asleep at the minute two of the film... but later I've woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, love camera work.`,
+        date: `2023-04-30T17:14:22.203Z`,
+        emotion: `sleeping`,
+        id: `4327`
       },
-      "id": 2,
-      "user_details": {
-        "already_watched": true,
-        "favorite": false,
-        "watching_date": `2022-10-12T04:56:43.541Z`,
-        "watchlist": false
-      }
-    },
-    {
-      "comments": [`3648`, `3649`, `3650`, `3651`, `3652`],
-      "film_info": {
-        "actors": [`Brad Pitt`, `Robert De Niro`],
-        "age_rating": 0,
-        "alternative_title": `A Man Who Saw The Wall`,
-        "description": `Oscar-winning film, a war drama about two young people, from the creators of timeless classic "Nu, Pogodi!" and "Alice in Wonderland", with the best fight scenes since Bruce Lee.`,
-        "director": `Tom Ford`,
-        "genre": [`Sci-Fi`, `Thriller`, `Action`, `Horror`],
-        "poster": `images/posters/santa-claus-conquers-the-martians.jpg`,
-        "release": {
-          "date": `2016-11-05T17:37:35.080Z`,
-          "release_country": `Italy`
-        },
-        "runtime": 84,
-        "title": `Friends On Themselves`,
-        "total_rating": 8,
-        "writers": [`Takeshi Kitano`, `Robert Zemeckis`]
+      {
+        author: `Fedor Walker`,
+        comment: `a film that changed my life, a true masterpiece, my friend and I went to watch this movie and never made it there so we didn't like it at all, have you noticed the director's cameo, post-credit scene was just amazing omg.`,
+        date: `2023-04-17T15:27:08.643Z`,
+        emotion: `sleeping`,
+        id: `4328`
       },
-      "id": 3,
-      "user_details": {
-        "already_watched": true,
-        "favorite": false,
-        "watching_date": `2023-03-18T04:56:43.541Z`,
-        "watchlist": true
+      {
+        author: `Sergey Ivanov`,
+        comment: `such a boring piece of..., my friend and I went to watch this movie and never made it there so we didn't like it at all, I know what film is gonna win Oscar this year, love camera work.`,
+        date: `2023-04-18T16:41:54.657Z`,
+        emotion: `puke`,
+        id: `4329`
       }
-    },
+    ],
+    [
+      {
+        author: `Alice Makoveev [comments array 1]`,
+        comment: `I fell asleep at the minute two of the film... but later I've woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, I know what film is gonna win Oscar this year, have you noticed the director's cameo, post-credit scene was just amazing omg.`,
+        date: `2023-04-13T18:05:53.921Z`,
+        emotion: `smile`,
+        id: `4330`
+      },
+      {
+        author: `Alice Walker`,
+        comment: `a true masterpiece, I fell asleep at the minute two of the film... but later I've woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, my friend and I went to watch this movie and never made it there so we didn't like it at all, I know what film is gonna win Oscar this year, love camera work, have you noticed the director's cameo.`,
+        date: `2023-04-28T03:12:18.385Z`,
+        emotion: `smile`,
+        id: `4331`
+      },
+      {
+        author: `Fedor O'Caml`,
+        comment: `have you noticed the director's cameo.`,
+        date: `2023-04-26T13:01:44.736Z`,
+        emotion: `smile`,
+        id: `4332`
+      },
+      {
+        author: `Dakota James`,
+        comment: `a true masterpiece.`,
+        date: `2023-04-27T18:15:51.942Z`,
+        emotion: `sleeping`,
+        id: `4333`
+      },
+      {
+        author: `Ivan O'Reilly`,
+        comment: `a film that changed my life, such a boring piece of....`,
+        date: `2023-04-25T22:32:49.725Z`,
+        emotion: `puke`,
+        id: `4334`
+      }
+    ],
+    [
+      {
+        author: `Tim Ivanov [comments array 2]`,
+        comment: `.`,
+        date: `2023-04-23T07:53:21.172Z`,
+        emotion: `sleeping`,
+        id: `3644`
+      },
+      {
+        author: `Nevada Makoveev`,
+        comment: `a film that changed my life, such a boring piece of..., my friend and I went to watch this movie and never made it there so we didn't like it at all, I know what film is gonna win Oscar this year.`,
+        date: `2023-04-13T03:39:31.149Z`,
+        emotion: `angry`,
+        id: `3645`
+      },
+      {
+        author: `Marina Walker`,
+        comment: `such a boring piece of..., I fell asleep at the minute two of the film... but later I've woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, love camera work.`,
+        date: `2023-04-30T17:14:22.203Z`,
+        emotion: `sleeping`,
+        id: `3646`
+      },
+      {
+        author: `Fedor Walker`,
+        comment: `a film that changed my life, a true masterpiece, my friend and I went to watch this movie and never made it there so we didn't like it at all, have you noticed the director's cameo, post-credit scene was just amazing omg.`,
+        date: `2023-04-17T15:27:08.643Z`,
+        emotion: `sleeping`,
+        id: `3647`
+      },
+    ],
+    [
+      {
+        author: `Alice Makoveev [comments array 3]`,
+        comment: `I fell asleep at the minute two of the film... but later I've woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, I know what film is gonna win Oscar this year, have you noticed the director's cameo, post-credit scene was just amazing omg.`,
+        date: `2023-04-13T18:05:53.921Z`,
+        emotion: `smile`,
+        id: `3648`
+      },
+      {
+        author: `Alice Walker`,
+        comment: `a true masterpiece, I fell asleep at the minute two of the film... but later I've woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, my friend and I went to watch this movie and never made it there so we didn't like it at all, I know what film is gonna win Oscar this year, love camera work, have you noticed the director's cameo.`,
+        date: `2023-04-28T03:12:18.385Z`,
+        emotion: `smile`,
+        id: `3649`
+      },
+      {
+        author: `Fedor O'Caml`,
+        comment: `have you noticed the director's cameo.`,
+        date: `2023-04-26T13:01:44.736Z`,
+        emotion: `smile`,
+        id: `3650`
+      },
+      {
+        author: `Dakota James`,
+        comment: `a true masterpiece.`,
+        date: `2023-04-27T18:15:51.942Z`,
+        emotion: `sleeping`,
+        id: `3651`
+      },
+      {
+        author: `Ivan O'Reilly`,
+        comment: `a film that changed my life, such a boring piece of....`,
+        date: `2023-04-25T22:32:49.725Z`,
+        emotion: `puke`,
+        id: `3652`
+      }
+    ],
+    [
+      {
+        author: `Tim Ivanov [comments array 4]`,
+        comment: `.`,
+        date: `2023-04-23T07:53:21.172Z`,
+        emotion: `sleeping`,
+        id: `3653`
+      },
+      {
+        author: `Nevada Makoveev`,
+        comment: `a film that changed my life, such a boring piece of..., my friend and I went to watch this movie and never made it there so we didn't like it at all, I know what film is gonna win Oscar this year.`,
+        date: `2023-04-13T03:39:31.149Z`,
+        emotion: `angry`,
+        id: `3654`
+      },
+      {
+        author: `Marina Walker`,
+        comment: `such a boring piece of..., I fell asleep at the minute two of the film... but later I've woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, love camera work.`,
+        date: `2023-04-30T17:14:22.203Z`,
+        emotion: `sleeping`,
+        id: `3655`
+      },
+      {
+        author: `Fedor Walker`,
+        comment: `a film that changed my life, a true masterpiece, my friend and I went to watch this movie and never made it there so we didn't like it at all, have you noticed the director's cameo, post-credit scene was just amazing omg.`,
+        date: `2023-04-17T15:27:08.643Z`,
+        emotion: `sleeping`,
+        id: `3656`
+      },
+      {
+        author: `Sergey Ivanov`,
+        comment: `such a boring piece of..., my friend and I went to watch this movie and never made it there so we didn't like it at all, I know what film is gonna win Oscar this year, love camera work.`,
+        date: `2023-04-18T16:41:54.657Z`,
+        emotion: `puke`,
+        id: `3657`
+      },
+      {
+        author: `Sergey Ivanov`,
+        comment: `such a boring piece of..., my friend and I went to watch this movie and never made it there so we didn't like it at all, I know what film is gonna win Oscar this year, love camera work.`,
+        date: `2023-04-18T16:41:54.657Z`,
+        emotion: `puke`,
+        id: `3658`
+      }
+    ],
+    [
+      {
+        author: `Alice Makoveev [comments array 5]`,
+        comment: `I fell asleep at the minute two of the film... but later I've woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, I know what film is gonna win Oscar this year, have you noticed the director's cameo, post-credit scene was just amazing omg.`,
+        date: `2023-04-13T18:05:53.921Z`,
+        emotion: `smile`,
+        id: `3659`
+      },
+      {
+        author: `Alice Walker`,
+        comment: `a true masterpiece, I fell asleep at the minute two of the film... but later I've woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, my friend and I went to watch this movie and never made it there so we didn't like it at all, I know what film is gonna win Oscar this year, love camera work, have you noticed the director's cameo.`,
+        date: `2023-04-28T03:12:18.385Z`,
+        emotion: `smile`,
+        id: `3660`
+      },
+      {
+        author: `Fedor O'Caml`,
+        comment: `have you noticed the director's cameo.`,
+        date: `2023-04-26T13:01:44.736Z`,
+        emotion: `smile`,
+        id: `3661`
+      }
+    ],
+    [
+      {
+        author: `Tim Ivanov [comments array 6]`,
+        comment: `.`,
+        date: `2023-04-23T07:53:21.172Z`,
+        emotion: `sleeping`,
+        id: `3662`
+      },
+      {
+        author: `Nevada Makoveev`,
+        comment: `a film that changed my life, such a boring piece of..., my friend and I went to watch this movie and never made it there so we didn't like it at all, I know what film is gonna win Oscar this year.`,
+        date: `2023-04-13T03:39:31.149Z`,
+        emotion: `angry`,
+        id: `3663`
+      },
+      {
+        author: `Marina Walker`,
+        comment: `such a boring piece of..., I fell asleep at the minute two of the film... but later I've woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, love camera work.`,
+        date: `2023-04-30T17:14:22.203Z`,
+        emotion: `sleeping`,
+        id: `3664`
+      },
+      {
+        author: `Fedor Walker`,
+        comment: `a film that changed my life, a true masterpiece, my friend and I went to watch this movie and never made it there so we didn't like it at all, have you noticed the director's cameo, post-credit scene was just amazing omg.`,
+        date: `2023-04-17T15:27:08.643Z`,
+        emotion: `sleeping`,
+        id: `3665`
+      }
+    ],
+    [
+      {
+        author: `Alice Makoveev`,
+        comment: `I fell asleep at the minute two of the film... but later I've woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, I know what film is gonna win Oscar this year, have you noticed the director's cameo, post-credit scene was just amazing omg.`,
+        date: `2023-04-13T18:05:53.921Z`,
+        emotion: `smile`,
+        id: `3666`
+      },
+      {
+        author: `Alice Walker`,
+        comment: `a true masterpiece, I fell asleep at the minute two of the film... but later I've woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, my friend and I went to watch this movie and never made it there so we didn't like it at all, I know what film is gonna win Oscar this year, love camera work, have you noticed the director's cameo.`,
+        date: `2023-04-28T03:12:18.385Z`,
+        emotion: `smile`,
+        id: `3667`
+      },
+      {
+        author: `Fedor O'Caml`,
+        comment: `have you noticed the director's cameo.`,
+        date: `2023-04-26T13:01:44.736Z`,
+        emotion: `smile`,
+        id: `3668`
+      },
+      {
+        author: `Dakota James`,
+        comment: `a true masterpiece.`,
+        date: `2023-04-27T18:15:51.942Z`,
+        emotion: `sleeping`,
+        id: `3669`
+      },
+      {
+        author: `Ivan O'Reilly`,
+        comment: `a film that changed my life, such a boring piece of....`,
+        date: `2023-04-25T22:32:49.725Z`,
+        emotion: `puke`,
+        id: `3670`
+      },
+      {
+        author: `Ivan O'Reilly`,
+        comment: `a film that changed my life, such a boring piece of....`,
+        date: `2023-04-25T22:32:49.725Z`,
+        emotion: `puke`,
+        id: `3671`
+      }
+    ],
+    [],
   ]
 };
