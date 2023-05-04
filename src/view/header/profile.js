@@ -1,12 +1,7 @@
-import {getRank} from './rank';
+import {Rank} from '@config/headerProfile';
+import {getRank} from '@view/header/rank';
 
 export const getHeaderProfile = (rankIndex) => {
-  const Rank = {
-    NOVICE: `Novice`,
-    FAN: `Fan`,
-    MOVIE_BUF: `Movie buff`
-  };
-
   let rankName;
 
   if (rankIndex > 0 && rankIndex < 11) {
@@ -19,7 +14,7 @@ export const getHeaderProfile = (rankIndex) => {
 
   return (
     `<section class="header__profile profile">
-      ${rankIndex > 0 ? getRank(rankName) : ``}
+      ${rankIndex > 0 ? getRank(rankName) : ''}
       <img class="profile__avatar" src="images/bitmap@2x.png" alt="Avatar" width="35" height="35">
     </section>`
   );
