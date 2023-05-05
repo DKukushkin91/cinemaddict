@@ -12,7 +12,7 @@ import {getMoviesTopRated} from '@view/movies/top-rated';
 import {getFooterStatistics} from '@view/footer/footer-statisticks';
 import {getFilmsPopupDetails} from '@view/movies/popup-details';
 
-const siteBody = document.querySelector('body');
+const elementBody = document.querySelector('body');
 const headerElement = document.querySelector('.header');
 const mainElement = document.querySelector('.main');
 const footerElement = document.querySelector('.footer');
@@ -46,6 +46,7 @@ if (storage.movies.length) {
   cardItem.forEach((item, index) => {
     const filmCardPoster = item.querySelector('.film-card__poster');
     const filmCardTitle = item.querySelector('.film-card__title');
+    const filmCardComments = item.querySelector('.film-card__comments');
 
     const filmCardAddToWatchlist = item.querySelector('.film-card__controls-item--add-to-watchlist');
     const filmCardAddToHistory = item.querySelector('.film-card__controls-item--mark-as-watched');
@@ -53,6 +54,7 @@ if (storage.movies.length) {
 
     filmCardPoster.addEventListener('click', () => handleClickMovieCard(index));
     filmCardTitle.addEventListener('click', () => handleClickMovieCard(index));
+    filmCardComments.addEventListener('click', () => handleClickMovieCard(index));
 
     filmCardAddToWatchlist.addEventListener('click', () => handleClickAddToWatchlist(index));
     filmCardAddToHistory.addEventListener('click', () => handleClickAddToHistory(index));
@@ -63,7 +65,24 @@ if (storage.movies.length) {
 }
 
 function handleClickMovieCard(index) {
-  render(siteBody, getFilmsPopupDetails(storage.movies[index]));
+  handleClickModalClose();
+
+  render(elementBody, getFilmsPopupDetails(storage.movies[index]));
+
+  const elementModal = elementBody.querySelector('.film-details');
+  const elementModalClose = elementModal.querySelector('.film-details__close-btn');
+
+  elementModalClose.addEventListener('click', handleClickModalClose);
+}
+
+function handleClickModalClose() {
+  if (elementBody.querySelector('.film-details')) {
+    const elementModal = elementBody.querySelector('.film-details');
+    const elementModalClose = elementModal.querySelector('.film-details__close-btn');
+
+    elementModalClose.removeEventListener('click', handleClickModalClose);
+    elementModal.remove();
+  }
 }
 
 function handleClickAddToWatchlist(index) {
