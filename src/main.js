@@ -73,6 +73,16 @@ function handleClickMovieCard(index) {
   const elementModalClose = elementModal.querySelector('.film-details__close-btn');
 
   elementModalClose.addEventListener('click', handleClickModalClose);
+
+  const filmCardAddToWatchlist = elementModal.querySelector('.film-details__control-button--watchlist');
+  const filmCardAddToHistory = elementModal.querySelector('.film-details__control-button--watched');
+  const filmCardAddToFavorite = elementModal.querySelector('.film-details__control-button--favorite');
+
+  filmCardAddToWatchlist.addEventListener('click', () => handleClickAddToWatchlist(index));
+  filmCardAddToHistory.addEventListener('click', () => handleClickAddToHistory(index));
+  filmCardAddToFavorite.addEventListener('click', () => handleClickAddToFavorite(index));
+
+  document.addEventListener('keydown', (e) => e.key === 'Escape' ? handleClickModalClose() : null);
 }
 
 function handleClickModalClose() {
@@ -86,21 +96,18 @@ function handleClickModalClose() {
 }
 
 function handleClickAddToWatchlist(index) {
-  console.log(storage.movies[index].user_details.watchlist);
-
   storage.movies[index].user_details.watchlist = !storage.movies[index].user_details.watchlist;
-
   render(mainElement, getMenu(storage.movies));
-
-  console.log(storage.movies[index].user_details.watchlist);
 }
 
 function handleClickAddToHistory(index) {
-  console.log('handleClickAddToHistory');
+  storage.movies[index].user_details['already_watched'] = !storage.movies[index].user_details.already_watched;
+  render(mainElement, getMenu(storage.movies));
 }
 
 function handleClickAddToFavorite(index) {
-  console.log('handleClickAddToFavorite');
+  storage.movies[index].user_details.favorite = !storage.movies[index].user_details.favorite;
+  render(mainElement, getMenu(storage.movies));
 }
 
 // Films List Top Rated
