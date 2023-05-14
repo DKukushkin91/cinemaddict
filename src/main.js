@@ -10,7 +10,8 @@ import {getMoviesList} from '@view/movies/list';
 import {getMoviesMostCommented} from '@view/movies/most-commented';
 import {getMoviesTopRated} from '@view/movies/top-rated';
 import {getFooterStatistics} from '@view/footer/footer-statisticks';
-import {getFilmsPopupDetails} from '@view/movies/popup-details';
+import {getFilmsPopupDetails} from '@view/popup/details';
+import {getMoviesComments} from '@view/popup/comments';
 
 const elementBody = document.querySelector('body');
 const headerElement = document.querySelector('.header');
@@ -82,7 +83,10 @@ function handleClickMovieCard(index) {
   filmCardAddToHistory.addEventListener('click', () => handleClickAddToHistory(index));
   filmCardAddToFavorite.addEventListener('click', () => handleClickAddToFavorite(index));
 
-  document.addEventListener('keydown', (e) => e.key === 'Escape' ? handleClickModalClose() : null);
+  document.addEventListener('keydown', handlePressESCModalClose);
+
+  const commentsContainer = elementModal.querySelector('.film-details__bottom-container');
+  render(commentsContainer, getMoviesComments(storage.movies[index]));
 }
 
 function handleClickModalClose() {
@@ -91,6 +95,15 @@ function handleClickModalClose() {
     const elementModalClose = elementModal.querySelector('.film-details__close-btn');
 
     elementModalClose.removeEventListener('click', handleClickModalClose);
+    elementModal.remove();
+  }
+}
+
+function handlePressESCModalClose(event) {
+  if (event.key === 'Escape') {
+    const elementModal = elementBody.querySelector('.film-details');
+
+    document.removeEventListener('keydown', handlePressESCModalClose);
     elementModal.remove();
   }
 }
