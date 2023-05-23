@@ -12,6 +12,9 @@ import {getMoviesTopRated} from '@view/movies/top-rated';
 import {getFooterStatistics} from '@view/footer/footer-statisticks';
 import {getFilmsPopupDetails} from '@view/popup/details';
 import {getMoviesComments} from '@view/popup/comments';
+import {getCommentsList} from '@view/popup/comments-list';
+import {getComment} from '@view/popup/comment';
+import {getCommentForm} from '@view/popup/comment-form';
 
 const elementBody = document.querySelector('body');
 const headerElement = document.querySelector('.header');
@@ -87,6 +90,20 @@ function handleClickMovieCard(index) {
 
   const commentsContainer = elementModal.querySelector('.film-details__bottom-container');
   render(commentsContainer, getMoviesComments(storage.movies[index]));
+
+  const commentsWrap = commentsContainer.querySelector('.film-details__comments-wrap');
+
+  if (storage.movies[index].comments.length) {
+    render(commentsWrap, getCommentsList());
+
+    const commentsList = commentsWrap.querySelector('.film-details__comments-list');
+
+    for (let commentIndex = 0; commentIndex < storage.movies[index].comments.length; commentIndex++) {
+      render(commentsList, getComment(storage.movies[index].comments[commentIndex]));
+    }
+  }
+
+  render(commentsWrap, getCommentForm());
 }
 
 function handleClickModalClose() {

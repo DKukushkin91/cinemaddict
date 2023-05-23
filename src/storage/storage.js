@@ -5,7 +5,43 @@ export const storage = {
   },
   movies: [
     {
-      'comments': ['4325', '4326', '4327', '4328', '4329'],
+      'comments': [
+        {
+          author: 'Tim Ivanov [comments array 0]',
+          comment: '.',
+          date: '2023-04-23T07:53:21.172Z',
+          emotion: 'sleeping',
+          id: '4325'
+        },
+        {
+          author: 'Nevada Makoveev',
+          comment: 'a film that changed my life, such a boring piece of..., my friend and I went to watch this movie and never made it there so we didn\'t like it at all, I know what film is gonna win Oscar this year.',
+          date: '2023-04-13T03:39:31.149Z',
+          emotion: 'angry',
+          id: '4326'
+        },
+        {
+          author: 'Marina Walker',
+          comment: 'such a boring piece of..., I fell asleep at the minute two of the film... but later I\'ve woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, love camera work.',
+          date: '2023-04-30T17:14:22.203Z',
+          emotion: 'sleeping',
+          id: '4327'
+        },
+        {
+          author: 'Fedor Walker',
+          comment: 'a film that changed my life, a true masterpiece, my friend and I went to watch this movie and never made it there so we didn\'t like it at all, have you noticed the director\'s cameo, post-credit scene was just amazing omg.',
+          date: '2023-04-17T15:27:08.643Z',
+          emotion: 'sleeping',
+          id: '4328'
+        },
+        {
+          author: 'Sergey Ivanov',
+          comment: 'such a boring piece of..., my friend and I went to watch this movie and never made it there so we didn\'t like it at all, I know what film is gonna win Oscar this year, love camera work.',
+          date: '2023-04-18T16:41:54.657Z',
+          emotion: 'puke',
+          id: '4329'
+        }
+      ],
       'film_info': {
         'actors': ['Cillian Murphy', 'Leonardo DiCaprio', 'Brad Pitt', 'Morgan Freeman ', 'Christian Bale', 'Takeshi Kitano', 'Matt Damon', 'Ralph Fiennes'],
         'age_rating': 21,
@@ -32,7 +68,43 @@ export const storage = {
       }
     },
     {
-      'comments': ['4330', '4331', '4332', '4333', '4334'],
+      'comments': [
+        // {
+        //   author: 'Alice Makoveev [comments array 1]',
+        //   comment: 'I fell asleep at the minute two of the film... but later I\'ve woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, I know what film is gonna win Oscar this year, have you noticed the director\'s cameo, post-credit scene was just amazing omg.',
+        //   date: '2023-04-13T18:05:53.921Z',
+        //   emotion: 'smile',
+        //   id: '4330'
+        // },
+        // {
+        //   author: 'Alice Walker',
+        //   comment: 'a true masterpiece, I fell asleep at the minute two of the film... but later I\'ve woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, my friend and I went to watch this movie and never made it there so we didn\'t like it at all, I know what film is gonna win Oscar this year, love camera work, have you noticed the director\'s cameo.',
+        //   date: '2023-04-28T03:12:18.385Z',
+        //   emotion: 'smile',
+        //   id: '4331'
+        // },
+        // {
+        //   author: 'Fedor O\'Caml',
+        //   comment: 'have you noticed the director\'s cameo.',
+        //   date: '2023-04-26T13:01:44.736Z',
+        //   emotion: 'smile',
+        //   id: '4332'
+        // },
+        // {
+        //   author: 'Dakota James',
+        //   comment: 'a true masterpiece.',
+        //   date: '2023-04-27T18:15:51.942Z',
+        //   emotion: 'sleeping',
+        //   id: '4333'
+        // },
+        // {
+        //   author: 'Ivan O\'Reilly',
+        //   comment: 'a film that changed my life, such a boring piece of....',
+        //   date: '2023-04-25T22:32:49.725Z',
+        //   emotion: 'puke',
+        //   id: '4334'
+        // }
+      ],
       'film_info': {
         'actors': ['Ralph Fiennes'],
         'age_rating': 6,
@@ -59,7 +131,36 @@ export const storage = {
       }
     },
     {
-      'comments': ['3644', '3645', '3646', '3647'],
+      'comments': [
+        {
+          author: 'Tim Ivanov [comments array 2]',
+          comment: '.',
+          date: '2023-04-23T07:53:21.172Z',
+          emotion: 'sleeping',
+          id: '3644'
+        },
+        {
+          author: 'Nevada Makoveev',
+          comment: 'a film that changed my life, such a boring piece of..., my friend and I went to watch this movie and never made it there so we didn\'t like it at all, I know what film is gonna win Oscar this year.',
+          date: '2023-04-13T03:39:31.149Z',
+          emotion: 'angry',
+          id: '3645'
+        },
+        {
+          author: 'Marina Walker',
+          comment: 'such a boring piece of..., I fell asleep at the minute two of the film... but later I\'ve woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, love camera work.',
+          date: '2023-04-30T17:14:22.203Z',
+          emotion: 'sleeping',
+          id: '3646'
+        },
+        {
+          author: 'Fedor Walker',
+          comment: 'a film that changed my life, a true masterpiece, my friend and I went to watch this movie and never made it there so we didn\'t like it at all, have you noticed the director\'s cameo, post-credit scene was just amazing omg.',
+          date: '2023-04-17T15:27:08.643Z',
+          emotion: 'sleeping',
+          id: '3647'
+        },
+      ],
       'film_info': {
         'actors': ['Michael Caine', 'Cillian Murphy', 'Tom Hanks', 'Edward Norton', 'Leonardo DiCaprio'],
         'age_rating': 6,
@@ -86,7 +187,43 @@ export const storage = {
       }
     },
     {
-      'comments': ['3648', '3649', '3650', '3651', '3652'],
+      'comments': [
+        {
+          author: 'Alice Makoveev [comments array 3]',
+          comment: 'I fell asleep at the minute two of the film... but later I\'ve woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, I know what film is gonna win Oscar this year, have you noticed the director\'s cameo, post-credit scene was just amazing omg.',
+          date: '2023-04-13T18:05:53.921Z',
+          emotion: 'smile',
+          id: '3648'
+        },
+        {
+          author: 'Alice Walker',
+          comment: 'a true masterpiece, I fell asleep at the minute two of the film... but later I\'ve woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, my friend and I went to watch this movie and never made it there so we didn\'t like it at all, I know what film is gonna win Oscar this year, love camera work, have you noticed the director\'s cameo.',
+          date: '2023-04-28T03:12:18.385Z',
+          emotion: 'smile',
+          id: '3649'
+        },
+        {
+          author: 'Fedor O\'Caml',
+          comment: 'have you noticed the director\'s cameo.',
+          date: '2023-04-26T13:01:44.736Z',
+          emotion: 'smile',
+          id: '3650'
+        },
+        {
+          author: 'Dakota James',
+          comment: 'a true masterpiece.',
+          date: '2023-04-27T18:15:51.942Z',
+          emotion: 'sleeping',
+          id: '3651'
+        },
+        {
+          author: 'Ivan O\'Reilly',
+          comment: 'a film that changed my life, such a boring piece of....',
+          date: '2023-04-25T22:32:49.725Z',
+          emotion: 'puke',
+          id: '3652'
+        }
+      ],
       'film_info': {
         'actors': ['Brad Pitt', 'Robert De Niro'],
         'age_rating': 0,
@@ -113,7 +250,50 @@ export const storage = {
       }
     },
     {
-      'comments': ['3653', '3654', '3655', '3656', '3657', '3658'],
+      'comments': [
+        {
+          author: 'Tim Ivanov [comments array 4]',
+          comment: '.',
+          date: '2023-04-23T07:53:21.172Z',
+          emotion: 'sleeping',
+          id: '3653'
+        },
+        {
+          author: 'Nevada Makoveev',
+          comment: 'a film that changed my life, such a boring piece of..., my friend and I went to watch this movie and never made it there so we didn\'t like it at all, I know what film is gonna win Oscar this year.',
+          date: '2023-04-13T03:39:31.149Z',
+          emotion: 'angry',
+          id: '3654'
+        },
+        {
+          author: 'Marina Walker',
+          comment: 'such a boring piece of..., I fell asleep at the minute two of the film... but later I\'ve woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, love camera work.',
+          date: '2023-04-30T17:14:22.203Z',
+          emotion: 'sleeping',
+          id: '3655'
+        },
+        {
+          author: 'Fedor Walker',
+          comment: 'a film that changed my life, a true masterpiece, my friend and I went to watch this movie and never made it there so we didn\'t like it at all, have you noticed the director\'s cameo, post-credit scene was just amazing omg.',
+          date: '2023-04-17T15:27:08.643Z',
+          emotion: 'sleeping',
+          id: '3656'
+        },
+        {
+          author: 'Sergey Ivanov',
+          comment: 'such a boring piece of..., my friend and I went to watch this movie and never made it there so we didn\'t like it at all, I know what film is gonna win Oscar this year, love camera work.',
+          date: '2023-04-18T16:41:54.657Z',
+          emotion: 'puke',
+          id: '3657'
+        },
+        {
+          author: 'Sergey Ivanov',
+          comment: 'such a boring piece of..., my friend and I went to watch this movie and never made it there so we didn\'t like it at all, I know what film is gonna win Oscar this year, love camera work.',
+          date: '2023-04-18T16:41:54.657Z',
+          emotion: 'puke',
+          id: '3658'
+        }
+      ],
       'film_info': {
         'actors': ['Christian Bale', 'Tom Hanks', 'Morgan Freeman ', 'Leonardo DiCaprio', 'Cillian Murphy', 'Matt Damon', 'Al Pacino', 'Harrison Ford', 'Michael Caine', 'Edward Norton', 'Brad Pitt'],
         'age_rating': 0,
@@ -140,7 +320,29 @@ export const storage = {
       }
     },
     {
-      'comments': ['3659', '3660', '3661'],
+      'comments': [
+        {
+          author: 'Alice Makoveev [comments array 5]',
+          comment: 'I fell asleep at the minute two of the film... but later I\'ve woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, I know what film is gonna win Oscar this year, have you noticed the director\'s cameo, post-credit scene was just amazing omg.',
+          date: '2023-04-13T18:05:53.921Z',
+          emotion: 'smile',
+          id: '3659'
+        },
+        {
+          author: 'Alice Walker',
+          comment: 'a true masterpiece, I fell asleep at the minute two of the film... but later I\'ve woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, my friend and I went to watch this movie and never made it there so we didn\'t like it at all, I know what film is gonna win Oscar this year, love camera work, have you noticed the director\'s cameo.',
+          date: '2023-04-28T03:12:18.385Z',
+          emotion: 'smile',
+          id: '3660'
+        },
+        {
+          author: 'Fedor O\'Caml',
+          comment: 'have you noticed the director\'s cameo.',
+          date: '2023-04-26T13:01:44.736Z',
+          emotion: 'smile',
+          id: '3661'
+        }
+      ],
       'film_info': {
         'actors': ['Al Pacino', 'Morgan Freeman ', 'Edward Norton'],
         'age_rating': 0,
@@ -167,7 +369,36 @@ export const storage = {
       }
     },
     {
-      'comments': ['3662', '3663', '3664', '3665'],
+      'comments': [
+        {
+          author: 'Tim Ivanov [comments array 6]',
+          comment: '.',
+          date: '2023-04-23T07:53:21.172Z',
+          emotion: 'sleeping',
+          id: '3662'
+        },
+        {
+          author: 'Nevada Makoveev',
+          comment: 'a film that changed my life, such a boring piece of..., my friend and I went to watch this movie and never made it there so we didn\'t like it at all, I know what film is gonna win Oscar this year.',
+          date: '2023-04-13T03:39:31.149Z',
+          emotion: 'angry',
+          id: '3663'
+        },
+        {
+          author: 'Marina Walker',
+          comment: 'such a boring piece of..., I fell asleep at the minute two of the film... but later I\'ve woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, love camera work.',
+          date: '2023-04-30T17:14:22.203Z',
+          emotion: 'sleeping',
+          id: '3664'
+        },
+        {
+          author: 'Fedor Walker',
+          comment: 'a film that changed my life, a true masterpiece, my friend and I went to watch this movie and never made it there so we didn\'t like it at all, have you noticed the director\'s cameo, post-credit scene was just amazing omg.',
+          date: '2023-04-17T15:27:08.643Z',
+          emotion: 'sleeping',
+          id: '3665'
+        }
+      ],
       'film_info': {
         'actors': ['Ralph Fiennes', 'Michael Caine', 'Robert De Niro', 'Gary Oldman', 'Morgan Freeman '],
         'age_rating': 0,
@@ -194,7 +425,50 @@ export const storage = {
       }
     },
     {
-      'comments': ['3666', '3667', '3668', '3669', '3670', '3671'],
+      'comments': [
+        {
+          author: 'Alice Makoveev',
+          comment: 'I fell asleep at the minute two of the film... but later I\'ve woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, I know what film is gonna win Oscar this year, have you noticed the director\'s cameo, post-credit scene was just amazing omg.',
+          date: '2023-04-13T18:05:53.921Z',
+          emotion: 'smile',
+          id: '3666'
+        },
+        {
+          author: 'Alice Walker',
+          comment: 'a true masterpiece, I fell asleep at the minute two of the film... but later I\'ve woken up... film has nothing to do with it I just felt tired... actually, film is okay... ish, my friend and I went to watch this movie and never made it there so we didn\'t like it at all, I know what film is gonna win Oscar this year, love camera work, have you noticed the director\'s cameo.',
+          date: '2023-04-28T03:12:18.385Z',
+          emotion: 'smile',
+          id: '3667'
+        },
+        {
+          author: 'Fedor O\'Caml',
+          comment: 'have you noticed the director\'s cameo.',
+          date: '2023-04-26T13:01:44.736Z',
+          emotion: 'smile',
+          id: '3668'
+        },
+        {
+          author: 'Dakota James',
+          comment: 'a true masterpiece.',
+          date: '2023-04-27T18:15:51.942Z',
+          emotion: 'sleeping',
+          id: '3669'
+        },
+        {
+          author: 'Ivan O\'Reilly',
+          comment: 'a film that changed my life, such a boring piece of....',
+          date: '2023-04-25T22:32:49.725Z',
+          emotion: 'puke',
+          id: '3670'
+        },
+        {
+          author: 'Ivan O\'Reilly',
+          comment: 'a film that changed my life, such a boring piece of....',
+          date: '2023-04-25T22:32:49.725Z',
+          emotion: 'puke',
+          id: '3671'
+        }
+      ],
       'film_info': {
         'actors': ['Morgan Freeman '],
         'age_rating': 6,
