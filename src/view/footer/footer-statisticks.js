@@ -1,4 +1,6 @@
 
-export const getFooterStatistics = () => {
-  return `<p>130 291 movies inside</p>`;
+export const getFooterStatistics = (count) => {
+  return (
+    `<p>${count} movies inside</p>`
+  );
 };

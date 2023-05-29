@@ -8,8 +8,10 @@ module.exports = {
     path: path.resolve(__dirname, 'public'),
   },
   devtool: 'source-map',
-  // devServer: {
-  //   contentBase: path.resolve(__dirname, 'public'),
-  //   watchContentBase: true
-  // }
+  resolve: {
+    alias: {
+      '@config': path.resolve(__dirname, 'src/config/'),
+      '@view': path.resolve(__dirname, 'src/view/'),
+    }
+  }
 };
